@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "drizzle-orm": "^0.30.5",
+    "hono": "^4.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "valibot": "^0.30.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.3",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/pg": "^8.11.4",
+    "drizzle-kit": "^0.20.14"
+  },
+  "scripts": {
+    "code:check": "biome check ./src",
+    "code:ci": "biome ci ./src",
+    "code:fix": "biome check --apply ./src",
+    "db:migrate": "drizzle-kit generate:pg",
+    "db:migrate:do": "bun run ./src/db/migrate.ts",
+    "db:migrate:check": "drizzle-kit check:pg",
+    "db:migrate:undo": "drizzle-kit drop",
+    "db:studio": "drizzle-kit studio --port 9090 --verbose",
+    "infra:down": "docker-compose down",
+    "infra:up": "docker-compose up -d",
+    "start": "bun run ./src/index.ts",
+    "start:dev": "bun run --hot ./src/index.ts"
+  },
+  "type": "module"
+}

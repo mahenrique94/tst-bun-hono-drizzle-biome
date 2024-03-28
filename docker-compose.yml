@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: pg
+    environment:
+      POSTGRES_DB: tst_bun
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+    image: postgres
+    ports:
+      - 5432:5432

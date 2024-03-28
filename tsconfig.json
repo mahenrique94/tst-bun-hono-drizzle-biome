@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "module": "nodenext",
+    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "strict": true
+  }
+}

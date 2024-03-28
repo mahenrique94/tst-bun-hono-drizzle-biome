@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1711586065988,
+      "tag": "0000_tricky_klaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1711586093340,
+      "tag": "0001_natural_venom",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1711659135122,
+      "tag": "0002_luxuriant_eternity",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1711660272670,
+      "tag": "0003_moaning_synch",
+      "breakpoints": true
+    }
+  ]
+}
